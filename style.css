@@ -1,0 +1,470 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+header{
+  
+  display: flex;
+  padding: 10px;
+
+  
+}
+
+header nav {
+    margin-left: auto;
+     margin-right: 80px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    gap: 30px; 
+    margin-top: 50px;
+}
+
+header nav ul li a {
+    text-decoration: none; 
+    color: #333; 
+   
+    
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    padding: 15px; 
+    
+    max-width: 400px;
+    max-height: 400px;
+    width: 8%; 
+    height: 8%;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+
+    background-color: white;
+    cursor: pointer;
+}
+
+/*---------------------------------------RODAPÉ--------------------------------------------------------*/
+footer{
+  display: flex;
+  background-color: #ffb300;
+  flex-direction: column; /* Isso faz os textos ficarem um embaixo do outro */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  text-align: center;      /* Garante que o texto dentro das tags quebre no meio */
+  padding: 30px 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  gap: 10px;
+}
+
+footer p {
+    margin: 0;      /* Remove o espaço automático do navegador */
+    padding: 0;     /* Garante que não haja enchimento interno */
+    color: rgb(255, 255, 255);
+} 
+footer h5 {
+    margin: 0;      /* Remove o espaço automático do navegador */
+    padding: 0;     /* Garante que não haja enchimento interno */
+    color: rgb(190, 190, 190);
+}
+
+.container-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Dá espaço entre o texto e a imagem */
+  gap: 3px;
+
+
+}
+
+/* --------------------------------------------------EFEITO DE TROCA DE COR-------------------------------------------------- */
+
+.fundocolorido{ 
+    /* 1. Definimos as cores do gradiente, e o angulo */
+    background: linear-gradient(-45deg, #ffd663, #eda601, #fff7cd);
+    
+    /* 2. Deixamos o fundo 4x maior que a tela para podermos "movê-lo" */
+    background-size: 400% 400%;
+    
+    /* 3. Aplicamos a animação chamada 'gradient' que dura 15 segundos e se repete para sempre */
+    animation: gradient 8s ease infinite;
+    
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }   /* Início */
+    50% { background-position: 100% 50%; } /* Meio: Move para o outro lado */
+    100% { background-position: 0% 50%; }  /* Fim: Volta ao início */
+}
+
+/* --------------------------------------------NOVIDADE------------------------------------------------ */
+
+.bloco-branco {
+    /* 1. Cor de fundo (branco com um pouco de transparência) */
+    background: rgba(255, 255, 255, 0.9); 
+    
+    /* 2. Arredondar os cantos (essencial para parecer um app moderno) */
+    border-radius: 30px; 
+    
+    /* 3. Espaçamento interno para o texto não encostar na borda */
+    padding: 40px; 
+    
+    /* 4. Largura máxima para não ficar esticado demais em telas grandes */
+    max-width: 500px;
+    max-height: 200px;
+    width: 90%; 
+    height: 30%;
+
+
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+}
+.bloco-branco h3{
+  text-align: center;
+  margin-top: 8px;
+}
+.bloco-branco P{
+  text-align: center;
+}
+
+
+.botao {
+
+    display: flex;
+
+
+    /* 1. Remove o sublinhado e a cor azul de link "feio" */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    /* 2. Transforma em um bloco para parecer um botão */
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #2a58ff; /* Um azul moderno */
+    
+    /* 3. Deixa as bordas arredondadas e o texto elegante */
+    border-radius: 15px; /* Bem arredondado estilo App */
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px; /* Espaço entre as letras para ficar chique */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    /* 4. Suavidade para o movimento */
+    transition: all 0.3s ease;
+    
+    /* 5. Sombra bem leve */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* O movimento que você gostou, agora mais suave */
+.botao:hover {
+    transform: translateY(-5px); /* Sobe um pouco */
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Aumenta a sombra ao subir */
+}
+
+.container{
+  display: flex;
+  gap: 10px;
+  margin-left: 37%;
+
+}
+
+/* ----------------------------------------------TITULOS E PAGRAFOS---------------------------------------------- */
+
+h5{
+  text-align: center;
+  margin-top: 5px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#produtos h4{
+  margin: 0;
+    padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  font-size: 35px;
+  text-align: center;
+}
+#produtos p{
+  margin: 0; 
+  padding: 0;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+font-size: 30px;
+}
+
+h2{
+  margin: 0;   
+  padding: 0; 
+  color: white;
+  font-size: 40px;
+  word-spacing: 7px;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h1{
+  margin: 0;   
+  padding: 0; 
+  color: white;
+  font-size: 62px;
+  word-spacing: 7px;
+  letter-spacing: 1px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.paragrafogrande{
+  color: white;
+  font-size: 20px;
+  word-spacing: 3px;
+  width: 750px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+.container-sobrenos {
+    display: flex; /* Coloca lado a lado */
+    align-items: center; /* Alinha verticalmente no meio */
+    justify-content: space-between; /* Dá espaço entre o texto e a imagem */
+    padding: 60px 10%; /* Espaço interno para não colar nas bordas */
+    gap: 40px; /* Espaço entre o texto e a imagem */
+}
+
+.texto-sobrenos {
+    flex: 1; /* Faz o texto ocupar metade do espaço */
+    max-width: 500px;
+}
+
+.texto-sobrenos h2 {
+    font-size: 32px;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.texto-sobrenos p {
+    color: #475569;
+    line-height: 1.6; /* Melhora o espaço entre linhas */
+    margin-bottom: 25px;
+}
+
+/* Estilo dos tópicos (bolinhas azuis) */
+.lista-sobrenos {
+    list-style: none; /* Tira a bolinha padrão */
+    padding: 0;
+}
+
+.lista-sobrenos li {
+    margin-bottom: 12px;
+    color: #334155;
+    font-weight: 500;
+    position: relative;
+    padding-left: 25px;
+}
+
+.lista-sobrenos li::before {
+    content: "◆"; /* O losango da sua imagem */
+    position: absolute;
+    left: 0;
+    color: #616161;
+}
+
+/* Estilo do Card da Direita */
+#imagem-sobrenos {
+    flex: 1;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        cursor: pointer;
+
+}
+
+#imagemfamilia{
+  border-radius: 10px;
+
+}
+
+
+
+/* --------------------------------------------contato------------------------------------------------ */
+/* 1. Centraliza o bloco de contato */
+#contato {
+    max-width: 500px;
+    margin: 40px auto; /* 'auto' centraliza horizontalmente */
+    padding: 30px;
+    background: #cecece;
+    border: 1px solid #000000; /* Borda preta fina */
+    border-radius: 8px;
+}
+
+/* 2. Força o empilhamento vertical */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Garante que o label fique em cima do input */
+    width: 100%; /* Garante que ocupem a largura toda do bloco */
+}
+
+/* 3. Ajuste para os inputs ocuparem a largura total */
+input, select, textarea {
+    width: 100%;
+    box-sizing: border-box; /* Essencial para o padding não estourar a borda */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.btn-enviar {
+    display: block; /* Garante que ele ocupe a linha toda ou seja centralizável */
+    width: 100%; /* Largura total igual aos campos */
+    padding: 12px;
+    background-color: #333; /* Você pode trocar por uma cor do seu logo */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    
+}
+
+/* Efeito ao passar o mouse no botão */
+.btn-enviar:hover {
+    background-color: #555;
+}
+
+/* ------------------------------------brinquedos-tabela------------------------------------------- */
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Obrigatório para funcionar o espaçamento */
+    border-spacing: 20px 0;    /* 20px de espaço na horizontal, 0 na vertical */
+}
+
+td {
+    padding: 0 50px; /* 0 em cima/baixo, 20px nas laterais */
+}
+
+.container-servicos {
+    display: flex;
+    justify-content: space-evenly; /* Distribui o espaço igualmente entre os itens */
+    align-items: center;
+    margin: 0 auto; /* Centraliza o container na página */
+
+}
+
+/* Se você estiver usando uma tabela tradicional */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.minha-imagem {
+    transition: transform 0.3s ease; /* Cria a suavidade no movimento */
+  
+}
+
+.minha-imagem:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
+    cursor: pointer;
+}
+
+
+/* ------------------------------------brinquedos-tabela------------------------------------------- */
+
+
+.bloco-creche {
+    background: rgba(220, 220, 220, 0.9);
+
+    border-radius: 20px;
+    padding: 32px;
+    
+    /* Largura controlada */
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto 40px auto; /* Centraliza horizontalmente e dá margem só embaixo */
+    
+    /* REMOVA o max-height e o height fixos */
+    /* Deixe o bloco crescer conforme o conteúdo precisa */
+    
+    box-shadow: 0 10px 10px rgba(145, 145, 145, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* ---------------------------------responsivo---------------------------------------- */
+/* -------------------------------------RESPONSIVO------------------------------------------- */
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+align-items:center;
+}
+
+header nav ul{
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+}
+
+.container-servicos{
+width:100%;
+}
+
+table{
+width:100%;
+}
+
+td{
+display:block;
+width:100%;
+margin-bottom:20px;
+}
+
+.produto{
+width:80%;
+}
+
+}
+
